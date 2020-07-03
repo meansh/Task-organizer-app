@@ -1,0 +1,26 @@
+<style>.button2 {background-color: #008CBA;
+border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 6px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;}
+</style>
+<div class="input-group mb-3 w-100">
+    <input
+    type="text"
+    name="todo"
+    placeholder="Enter a todo"
+    class="form-control"
+    [(ngModel)]="todoTitle"
+    />
+    <div class="input-group-append">
+       <button 
+       (click)="handleAdd()" class="button button2">Add Todo</button>
+    </div>
+</div>
